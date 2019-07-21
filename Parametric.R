@@ -75,7 +75,7 @@ real_week <- DT_ens[date %in% n_date[85:91], value]
 
 
 #Error - MAPE
-mape(real_week, for_week_arima) #6.130705
+mape(real_week, for_week_arima) #5.130705
 mape(real_week, for_week_exp) #6.627346
 mape(real_week, for_week_naive) #5.673666
 

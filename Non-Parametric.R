@@ -10,7 +10,7 @@ library(randomForest)
 
 #Load Data
 
-
+DT_ens <- data.table("DT_ens.csv")
 
 
 
@@ -549,13 +549,14 @@ err_mape_rf <- sapply(0:(n_days-1), function(i)
        for_rf[,i+1]))
 
 summary(err_mape_rpart)
-
+# 5.675
 summary(err_mape_ctree)
-
+# 6.16
 summary(err_mape_rpart_sim)
-
+# 7.948
 summary(err_mape_ctree_sim)
-
+# 7.241
 summary(err_mape_rf)
+# 4.947
 
 
